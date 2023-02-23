@@ -1,0 +1,12 @@
+4 | 1 | masha
+1 | 1 | hello
+4 | 1 | masha
+1 | 2 | hello
+1 | 2 | hello
+1 | 2 | hello
+1 | 2 | hello
+4 | 1 | masha
+4 | 1 | masha
+4 | 1 | masha
+3 | 4 | world
+3 | 4 | world

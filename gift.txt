@@ -1,0 +1,7 @@
+1 | 2 | hello
+3 | 4 | world
+3 | 4 | world
+5 | 1 | mash
+4 | 1 | masha
+6 | 3 | haha
+7 | 5 | kuzia
