@@ -8,11 +8,12 @@ public class Presenter {
         this.view = view;
         this.model = model;
     }
+
     public void onClick() throws FileNotFoundException {
         Boolean b = true;
         int i = 0;
         while (b) {
-            if (i < 1){
+            if (i < 1) {
                 System.out.println("Список команд:\n1: Посмотреть подарки для розыгрыша" +
                         "\n2: Изменить вероятность выпадения для подарка" +
                         "\n3: Провести розыгрыш" +

@@ -3,20 +3,12 @@ public class Present {
     private String name;
     private int quantity;
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
     private int dropFrequency;
 
     public Present(int id, String name, int quantity, int dropFrequency) {
         this.id = id;
         this.name = name;
         this.quantity = quantity;
-        this.dropFrequency = dropFrequency;
-    }
-
-    public void setDropFrequency(int dropFrequency) {
         this.dropFrequency = dropFrequency;
     }
 
@@ -28,6 +20,10 @@ public class Present {
         return quantity;
     }
 
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     public String getName() {
         return name;
     }
@@ -36,9 +32,13 @@ public class Present {
         return dropFrequency;
     }
 
+    public void setDropFrequency(int dropFrequency) {
+        this.dropFrequency = dropFrequency;
+    }
+
     @Override
     public String toString() {
-        return  "id: " + id +
+        return "id: " + id +
                 ", name: " + name +
                 ", quantity: " + quantity +
                 ", dropFrequency: " + dropFrequency +
