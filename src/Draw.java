@@ -45,8 +45,15 @@ public class Draw implements Model, Iterable, Iterator<Present> {
                 presentList.remove(i);
             }
         }
-        this.giftList.add(new Present(id, name, quantity, dropFrequency));
 
+        quantity = 1;
+        for (Present g : giftList) {
+            if (id == g.getId()) {
+                g.setQuantity(quantity + 1);
+                return;
+            }
+        }
+        this.giftList.add(new Present(id, name, quantity, dropFrequency));
     }
 
 
@@ -55,6 +62,9 @@ public class Draw implements Model, Iterable, Iterator<Present> {
      */
     public boolean setDropPers() {
         try {
+            if (parseInt(data[2]) > 5){
+                return false;
+            }
             for (Present p : presentList) {
                 if (parseInt(data[1]) == p.getId()) {
                     p.setDropFrequency(parseInt(data[2]));
