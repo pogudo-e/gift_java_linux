@@ -13,7 +13,7 @@ public class Draw implements Model, Iterable, Iterator<Present> {
     private String[] data;
     private String inputData;
 
-    public Draw() throws FileNotFoundException {
+    public Draw() {
         this.presentList = new ArrayList<Present>();
         this.giftList = new ArrayList<Present>();
         toList(readFile());
